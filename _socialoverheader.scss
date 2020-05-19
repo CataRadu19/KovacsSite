@@ -1,0 +1,148 @@
+div .nusepoate {
+  display: none;
+}
+
+.social .socialright .socialremove {
+  display: flex;
+}
+
+.social .socialright .socialremove a{
+  &:hover {
+    color: white;
+  }
+  display: flex;
+}
+
+
+@keyframes sociale {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.social {
+  width: 100%;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .socialright {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10vw;
+    align-items: center;
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    a {
+      &:hover {
+        color: #cccccc;
+      }
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    p {
+      color: white;
+      margin-left: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .socialleft {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 8vw;
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    i {
+      padding-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    p {
+      padding-left: 10px;
+      margin: 0;
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .social .socialleft {
+    padding: 0;
+  }
+
+  .social .socialright .socialremove {
+    display: none;
+  }
+
+  .social .socialright {
+    padding: 0 35px 0 0;
+  }
+
+  ul li {
+    display: none;
+  }
+
+  div .nusepoate {
+    display: inline-block;
+  }
+}
+
+
+
+@media only screen and (max-width: 510px) {
+  .social .socialleft {
+    padding: 0;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .social .socialright .socialremove {
+    display: none;
+  }
+
+  .social .socialright {
+    padding: 0 5px 0 0;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 415px) {
+  .social .socialleft {
+    padding: 0;
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}

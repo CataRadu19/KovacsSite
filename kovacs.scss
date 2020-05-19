@@ -1,0 +1,385 @@
+@import "startcss";
+@import "fusion";
+
+$base-color: #ED1D25;
+
+a img {
+  height: 200px;
+  width: 200px;
+}
+
+
+.headercupoza {
+  width: 100%;
+  height: 100vh;
+  background-image: url("poza12.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.navbar-nav {
+  a{
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: 	#E8E8E8;
+    }
+  }
+  li{
+    margin-left: 15px;
+    font-weight: 600;
+    color: white;
+    list-style-type: none;
+    font-size: 1.8rem;
+    &:hover {
+      color: 	#E8E8E8;
+    }
+  }
+}
+
+
+
+
+.fiecarezi {
+  animation-name: fiecare;
+  animation-delay:1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+@keyframes fiecare{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.listasus {
+  align-items: center;
+  span {
+    color: $base-color  ;
+  }
+  li{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    list-style-type: none;
+    text-align: right;
+  }
+  .comandasus {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+}
+
+
+
+.row {
+  width: 100%
+}
+
+.wraptextmare {
+  padding-top: 20vh;
+  h1{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  }
+  p{
+  color: white;
+}
+}
+
+.wrappa {
+  height: 100vh;
+    background: rgba(0,0,0,0.4);
+}
+
+
+// END OF HEADER
+
+
+
+// START OF CONT2
+
+.cont2 {
+  width: 100%;
+
+}
+
+.celemai {
+  color: black;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.columnvandute {
+  h1{
+    font-weight: 600;
+    color: $base-color;
+  }
+  p{
+    font-weight: 700;
+    color: black;
+  }
+}
+
+// END OF CONT2
+
+
+
+
+
+
+// START OF CONT3
+
+.cont3 {
+  width: 100%;
+  background-image: url("pic3.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+    animation: breath 30s linear infinite;
+}
+
+
+.istoriatext {
+  color: white;
+  font-weight: 600;
+  font-size: 5rem;
+  span {
+    color:$base-color;
+  }
+}
+
+.istoriatextbrut {
+  color: white;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.istoriatextmic {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.wrappa2 {
+  height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.buttonciteste1 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+
+
+.buttonciteste {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 12vh;
+}
+
+// END OF CONT3
+
+
+
+
+// START OF CONT4
+
+
+.cont4 {
+  width: 100%;
+}
+
+
+.columnservicii {
+  img{
+    height: 200px;
+  }
+}
+
+
+// END OF CONT4
+
+
+
+
+
+
+
+// START OF CONT5
+
+.cont5 {
+  width: 100%;
+  background-image: url("pic10.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cafeatogotitlu {
+  font-size: 5rem;
+  color: white;
+  font-weight: 500;
+  span {
+    color:$base-color;
+  }
+}
+
+
+
+.pozacafea {
+  img {
+    height: 320px;
+    width: 100px;
+  }
+  h1 {
+    color: white;
+  }
+  p{
+    color: $base-color;
+  }
+}
+
+
+.ofertavalabila {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// END OF CONT5
+
+.originale {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.originale span {
+  color: $base-color;
+}
+
+.originalemic {
+
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+
+.cont7 {
+  width: 100%;
+  background-image: url("fundalfooter2.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.logouri {
+  padding-top: 80px;
+}
+.logouri a {
+  &:hover {
+  filter: brightness(0.5) sepia(1) saturate(8000%);
+  }
+
+}
+.logouri img{
+
+  filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(269deg) brightness(114%) contrast(100%);
+}
+
+
+.footervreaupad {
+  padding-top: 30px;
+}
+
+
+
+.footertextmic {
+  color: white;
+  span {
+    color:red;
+  }
+}
+
+
+.paddingfooter {
+  padding-bottom: 60px;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .navbar-text {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 426px) {
+  .cafeatogotitlu {
+    font-size: 5rem;
+    color: white;
+    font-weight: 500;
+    span {
+      color:$base-color;
+    }
+  }
+
+
+
+  .pozacafea {
+    img {
+      height: 320px;
+      width: 100px;
+    }
+    h1 {
+      color: white;
+    }
+    p{
+      color: $base-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 426px) {
+  .wraptextmare {
+    padding-top: 20vh;
+    text-align: center;
+    h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4.5rem;
+    }
+    p{
+    color: white;
+  }
+  }
+}
